@@ -47,9 +47,10 @@ void main() {
   
   
   //Contoh penggunaan parse() , mengubah tipe number ke string 
-  int no = 12;
-  var ubahData1 = no.toString();
+  int no = 12.345;
+  var ubahData1 = no.toString(); //no berubah tipe data menjadi string
   print(ubahData1);
   
-  
+  var ubahData2 = no.toStringAsFixed(2);
+
 }
