@@ -51,6 +51,38 @@ void main() {
   var ubahData1 = no.toString(); //no berubah tipe data menjadi string
   print(ubahData1);
   
-  var ubahData2 = no.toStringAsFixed(2);
-
+var ubahData2 = no.toStringAsFixed(2); // 2 angka dibelakang koma
+  print(ubahData2);
+  
+  
+  String alamat = "Jl. Soekarno Hatta";
+  String alamat2 = 'Jl. Soekarno Hatta 2';
+  
+  String gabung = alamat + " " + alamat2; //Jl. Soekarno Hatta Jl. Soekarno Hatta2
+  String gabung2 = "$alamat $alamat2"; //Jl. Soekarno Hatta Jl. Soekarno Hatta2
+  print(gabung2);
+  
+  
+  String nilai = '1';
+  String nilai2 = 'Ini string 2';
+  
+  String gabungan = "${int.parse(nilai)+9} $nilai2"; //10 Ini String 2
+  print(gabungan);
+  
+  //raw DAta
+  
+  var data1 = r"Harga $10"; //Harga $10
+  print(data1);  
+  
+  //unicode
+  print("I \u2654 ");
+  
+  
+  //Boolean  --> true / false
+  
+  bool selalubenar = true;
+  bool selalusalah = false;
+  
+  bool tidakbenar = !true;
+  bool tidaksalah = !false;
 }
